@@ -72,9 +72,11 @@ export const Signup = () => {
             onClick={handleSignup}
             placeholder={"Sign Up"}
           />
-        <div className='flex justify-center p-2 font-semibold text-md text-slate-700'>
+        <div onClick={()=>{
+      navigate('/signin')
+        } className='flex justify-center p-2 font-semibold text-md text-slate-700'>
               Already signed up? 
-          <a href='http://localhost:5173/signin' className='ml-2 text-yellow-600 hover:text-yello-800 transition-colors duration-200'>Signin</a>
+        
         </div>
           {error && <div className="text-red-500 text-center mt-2">{error}</div>}
         </div>
