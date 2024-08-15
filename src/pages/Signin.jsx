@@ -61,7 +61,8 @@ export const Signin = () => {
         </div>
         <div className='flex justify-center p-2 font-semibold text-md text-slate-700'>
               Not signed up? 
-          <a href='http://localhost:5173/signup' className='ml-2 text-yellow-600 hover:text-yellow-800 transition-colors duration-200'>Signup</a>
+          <span onClick={()=>
+      navigate('/signup')} className='ml-2 text-yellow-600 hover:text-yellow-800 transition-colors duration-200'>Signup</span>
         </div>
         {error && <div className="text-red-500 text-center mt-2">{error}</div>}  {/* Display error */}
       </div>
