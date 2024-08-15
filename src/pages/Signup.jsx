@@ -74,7 +74,7 @@ export const Signup = () => {
           />
         <div className='flex justify-center p-2 font-semibold text-md text-slate-700'>
               Already signed up? 
-          <span onClick={()=>{
+          <span onClick={()=>
       navigate('/signin')
         } className="text-yellow-600 cursor-pointer">Signin</span>
         </div>
